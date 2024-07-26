@@ -1,9 +1,8 @@
 import sys
 import os
 sys.path.append('../../software/models/')
-import numpy as np
 from scipy.io.wavfile import read
-from utilFunctions import wavread
+"from utilFunctions import wavread"
 
 """
 A1-Part-1: Reading an audio file
@@ -24,8 +23,6 @@ If you run your code using piano.wav as the input, the function should return th
 array([-0.06213569, -0.04541154, -0.02734458, -0.0093997 ,  0.00769066,	0.02319407,  0.03503525, 
 0.04309214, 0.04626606,  0.0441908], dtype=float32)
 """
-
-inputFile = os.path.join(r'C:\\Users\\kriss\\OneDrive\Documents\\GitHubRepository\\sms-tools\\sounds', 'piano.wav')
 
 def readAudio(inputFile):
     """
