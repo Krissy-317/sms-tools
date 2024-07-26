@@ -2,7 +2,6 @@ import sys
 import os
 sys.path.append('../../software/models/')
 import numpy as np
-"from scipy.io.wavfile import read"
 from utilFunctions import wavread
 
 """
@@ -34,7 +33,7 @@ def readAudio(inputFile):
     """
     ## Your code here
     (fs, x) = wavread(inputFile)
-    y = np.array(x[50001:50010])
+    y = np.array(x[50001:50011])
 
     return y
 
