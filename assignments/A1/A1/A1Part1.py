@@ -1,7 +1,8 @@
 import sys
 import os
 sys.path.append('../../software/models/')
-import numpy as np 
+import numpy as np
+from scipy.io.wavfile import read
 from utilFunctions import wavread
 
 """
@@ -34,5 +35,8 @@ def readAudio(inputFile):
         The function should return a numpy array that contains 10 samples of the audio.
     """
     ## Your code here
-    (fs, x) = wavread(inputFile)
+    (fs, x) = read(inputFile)
+    y = x[50001:50010]
+
+    print(y)
 
