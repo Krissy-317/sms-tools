@@ -36,5 +36,5 @@ def readAudio(inputFile):
     (fs, x) = read(inputFile)
     y = np.array(x[50001:50010])
 
-    print(y)
+    return y
 
