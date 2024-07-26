@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.append('../../software/models/')
 import numpy as np
-from scipy.io.wavfile import read
+"from scipy.io.wavfile import read"
 from utilFunctions import wavread
 
 """
