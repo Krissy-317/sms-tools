@@ -33,7 +33,7 @@ def readAudio(inputFile):
     """
     ## Your code here
     (fs, x) = wavread(inputFile)
-    y = np.array(x[50001:50011])
+    y = np.array(x[50000:50010])
 
     return y
 
