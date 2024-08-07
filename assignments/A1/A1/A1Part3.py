@@ -19,9 +19,7 @@ def hopSamples(x,M):
     Output:
         A numpy array containing every Mth element in x, starting from the first element in x.
     """
-    ## Your code here
-    x = input("Enter the array: ")
-    M = input("Enter the hop integer: ")
+    ## Your code her
     b = 0
     y = []
     for i in range(0, x.size):
