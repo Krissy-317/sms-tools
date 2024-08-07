@@ -3,6 +3,7 @@ import os
 sys.path.append('../../software/models/')
 from utilFunctions import wavread, wavwrite
 from A1Part3 import hopSamples
+import numpy as np
 
 """
 A1-Part-4: Downsampling audio: Changing the sampling rate
@@ -27,6 +28,6 @@ def downsampleAudio(inputFile, M):
     """
     ## Your code here
     (fs, x) = wavread(inputFile)
-    y = hopSamples(x,M)
+    y = np.array(hopSamples(x,M)).tolist()
     print(type(y))
 "  wavwrite('vibraphone-C6_downsampled.wav', M, y) "
