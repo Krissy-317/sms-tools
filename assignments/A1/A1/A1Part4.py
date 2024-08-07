@@ -29,5 +29,4 @@ def downsampleAudio(inputFile, M):
     ## Your code here
     (fs, x) = wavread(inputFile)
     y = np.array(hopSamples(x,M)).tolist()
-    print(type(y))
-"  wavwrite('vibraphone-C6_downsampled.wav', M, y) "
+    wavwrite('vibraphone-C6_downsampled.wav', M, y)
