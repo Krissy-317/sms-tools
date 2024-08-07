@@ -26,3 +26,6 @@ def downsampleAudio(inputFile, M):
         	M: downsampling factor (positive integer)
     """
     ## Your code here
+    (fs, x) = wavread(inputFile)
+    y = hopSamples(x,M)
+    wavwrite('vibraphone-C6_downsampled.wav', M, y)
