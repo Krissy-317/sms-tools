@@ -1,3 +1,4 @@
+import numpy as np
 """
 A1-Part-3: Python array indexing
 
@@ -19,6 +20,17 @@ def hopSamples(x,M):
         A numpy array containing every Mth element in x, starting from the first element in x.
     """
     ## Your code here
+    x = input("Enter the array: ")
+    M = input("Enter the hop integer: ")
+    b = 0
+    y = []
+    for i in range(0, x.size):
+        if i == b:
+            y.append(x[i])
+            b = b + M
+    
+    result = np.array(y)
+    return result
 
   
   
